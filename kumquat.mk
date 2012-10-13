@@ -29,17 +29,16 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# This device is xhdpi.  However the platform doesn't
-# currently contain all of the bitmaps at xhdpi density so
+# This device is hdpi.  However the platform doesn't
+# currently contain all of the bitmaps at hdpi density so
 # we do this little trick to fall back to the hdpi version
-# if the xhdpi doesn't exist.
+# if the hdpi doesn't exist.
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Configuration scripts
 PRODUCT_COPY_FILES += \
-   device/sony/montblanc-common/prebuilt/logo.rle:root/logo.rle \
-
+   device/sony/montblanc-common/prebuilt/logo.rle:root/logo.rle
 
 # Configuration scripts
 PRODUCT_COPY_FILES += \
@@ -81,16 +80,6 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/cflashlib.cfg:system/etc/cflashlib.cfg \
    $(LOCAL_PATH)/config/flashled_param_config.cfg:system/etc/flashled_param_config.cfg \
    $(LOCAL_PATH)/config/sysmon.cfg:system/etc/sysmon.cfg
-
-#Offline charging animation
-PRODUCT_COPY_FILES += \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_01.png:system/semc/chargemon/data/charging_animation_01.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_02.png:system/semc/chargemon/data/charging_animation_02.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_03.png:system/semc/chargemon/data/charging_animation_03.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_04.png:system/semc/chargemon/data/charging_animation_04.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_05.png:system/semc/chargemon/data/charging_animation_05.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_06.png:system/semc/chargemon/data/charging_animation_06.png \
-    device/sony/montblanc-common/prebuilt/animations/charging_animation_07.png:system/semc/chargemon/data/charging_animation_07.png
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
