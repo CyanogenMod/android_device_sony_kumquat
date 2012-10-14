@@ -34,6 +34,9 @@ bin/illumination_service
 bin/blue-up.sh
 bin/at_core
 bin/cspsa-cmd
+bin/batcap
+bin/touchd
+bin/cyttsp_fwloader
 etc/psdata/sterc_script_disconnect_dun
 etc/psdata/sterc_script_disconnect
 etc/psdata/stepscc_conf
