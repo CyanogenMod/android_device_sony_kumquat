@@ -1,15 +1,27 @@
 #!/sbin/sh
 
 # trigger button-backlight
-echo '255' > /sys/class/leds/so34-led0/brightness
-echo '255' > /sys/class/leds/so34-led1/brightness
-echo '255' > /sys/class/leds/so34-led2/brightness
-cat /dev/input/event1 > /dev/keycheck&
+echo '255' > /sys/class/leds/l-key-blue/brightness
+echo '255' > /sys/class/leds/m-key-blue/brightness
+echo '255' > /sys/class/leds/r-key-blue/brightness
+echo '255' > /sys/class/leds/l-key-green/brightness
+echo '255' > /sys/class/leds/m-key-green/brightness
+echo '255' > /sys/class/leds/r-key-green/brightness
+echo '255' > /sys/class/leds/l-key-red/brightness
+echo '255' > /sys/class/leds/m-key-red/brightness
+echo '255' > /sys/class/leds/r-key-red/brightness
+cat /dev/input/event2 > /dev/keycheck&
 sleep 3
 
 # trigger button-backlight
-echo '0' > /sys/class/leds/so34-led0/brightness
-echo '0' > /sys/class/leds/so34-led1/brightness
-echo '0' > /sys/class/leds/so34-led2/brightness
+echo '0' > /sys/class/leds/l-key-blue/brightness
+echo '0' > /sys/class/leds/m-key-blue/brightness
+echo '0' > /sys/class/leds/r-key-blue/brightness
+echo '0' > /sys/class/leds/l-key-green/brightness
+echo '0' > /sys/class/leds/m-key-green/brightness
+echo '0' > /sys/class/leds/r-key-green/brightness
+echo '0' > /sys/class/leds/l-key-red/brightness
+echo '0' > /sys/class/leds/m-key-red/brightness
+echo '0' > /sys/class/leds/r-key-red/brightness
 
 kill -9 $!
