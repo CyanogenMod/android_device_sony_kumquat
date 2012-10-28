@@ -150,6 +150,10 @@ lib/libclientgps.so
 lib/libcamera_clientsemc.so
 lib/libnmf.so
 lib/libste_audio_mixer.so
+lib/libste_enc_amr.so
+lib/libste_enc_amrwb.so
+lib/libste_dec_amrwb.so
+lib/libste_dec_amr.so
 lib/libstelpcutils.so
 lib/libstecom.so
 lib/libmiscta.so
