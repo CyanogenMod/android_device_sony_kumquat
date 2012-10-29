@@ -118,6 +118,7 @@ lib/sysmon/sysmon_lcd_brightness_reset.so
 lib/sysmon/sysmon_test_sensor.so
 lib/libta.so
 lib/libtee.so
+lib/libjpeg.so
 lib/libste_ens_audio_common.so
 lib/libbassapp.so
 lib/libu300-ril.so
