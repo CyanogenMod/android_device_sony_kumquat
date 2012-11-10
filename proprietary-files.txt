@@ -256,9 +256,6 @@ vendor/camera/APT00YP1.dat
 vendor/camera/STW05BN0.dat
 vendor/camera/KMO05BN0.dat
 vendor/camera/flash.dat
-usr/lib/alsa-lib/libasound_module_pcm_bluetooth.so
-usr/lib/alsa-lib/libasound_module_ctl_bluetooth.so
-usr/lib/alsa-lib/libasound_module_pcm_steiop.so
 usr/share/alsa/pcm/side.conf
 usr/share/alsa/pcm/dsnoop.conf
 usr/share/alsa/pcm/iec958.conf
