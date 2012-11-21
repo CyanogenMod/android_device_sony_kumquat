@@ -6,6 +6,8 @@ USE_CAMERA_STUB := true
 #inherit from the common montblanc definitions
 -include device/sony/montblanc-common/BoardConfigCommon.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/sony/kumquat/include
+
 TARGET_KERNEL_CONFIG := cyanogen_kumquat_defconfig
 
 # Partition information
@@ -21,7 +23,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_FORCE_KERNEL_ADDRESS  := 0x00008000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x01000000
 
-COMMON_GLOBAL_CFLAGS += -DFANCY_NOTIFICATION -DNO_BLINK
+COMMON_GLOBAL_CFLAGS += -DNEW_NOTIFICATION
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
