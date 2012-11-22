@@ -30,7 +30,6 @@ bin/ste_omxil_test
 bin/system_monitor
 bin/taimport
 bin/wait4tad
-bin/illumination_service
 bin/blue-up.sh
 bin/at_core
 bin/cspsa-cmd
