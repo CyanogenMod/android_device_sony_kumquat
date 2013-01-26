@@ -33,15 +33,6 @@ char const*const LED_FILE_TRIGGER[] = {
 };
 
 char const*const BUTTON_BACKLIGHT_FILE[] = {
- "/sys/class/leds/l-key-red/brightness",
- "/sys/class/leds/m-key-red/brightness",
- "/sys/class/leds/r-key-red/brightness",
- "/sys/class/leds/l-key-green/brightness",
- "/sys/class/leds/m-key-green/brightness",
- "/sys/class/leds/r-key-green/brightness",
- "/sys/class/leds/l-key-blue/brightness",
- "/sys/class/leds/m-key-blue/brightness",
- "/sys/class/leds/r-key-blue/brightness",
 };
 
 char const*const LED_FILE_PATTERN = "/sys/devices/platform/nmk-i2c.2/i2c-2/2-0040/pattern_data";
